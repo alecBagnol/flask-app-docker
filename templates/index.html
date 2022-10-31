@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Playstation Games List App</title>
+    <style type="text/css">
+        body {
+            max-width: 500px;
+            margin: 100px auto;
+            border: 20px solid #ccc;
+            padding: 10px;
+            background-color: #000;
+            color: #fff;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        .container {
+            width: 80%;
+            margin: auto;
+            overflow: hidden;
+        }
+        .container h1 {
+            text-align: center;
+            margin: 20px 0;
+        }
+        .container ul {
+            list-style: none;
+            padding: 0;
+        }
+        .container ul li {
+            margin: 10px 0;
+        }
+        .container ul li a {
+            color: #fff;
+            text-decoration: none;
+        }
+        .container ul li a:hover {
+            color: #ccc;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Playstation Games List App</h1>
+        <div class="games">
+            <h2>Games</h2>
+            <ul>
+                <li><img src="{{url}}" alt="game"></li>
+                <p><small>Courtesy of <a href="https://www.listchallenges.com/">listchallenges</a></small></p>
+            </ul>
+        </div>
+    </div>
+</body>
+</html>
