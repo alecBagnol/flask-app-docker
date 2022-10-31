@@ -1,11 +1,9 @@
 import random
-from flask import Flask, render_template, request, redirect, url_for
-# from flask_sqlalchemy import SQLAlchemy
+
+from flask import Flask, render_template
 from datetime import datetime
 
 app = Flask(__name__)
-# app.config['SQLALCHEMY_DATABASE_URI'] = 'sqlite:///test.db'
-# db = SQLAlchemy(app)
 
 #list of playstation games
 images = [
@@ -32,4 +30,4 @@ def index():
     return render_template('index.html', url=url)
 
 if __name__ == "__main__":
-    app.run(host='0.0.0.0', port=80)
+    app.run(host='0.0.0.0', debug=True)
